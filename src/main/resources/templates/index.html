@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubicol</title>
+    <!--CDN Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CDN Boostrap Sj-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand me-2" href="/">
+                    <img class="logo1 d-block" src="img/cubicol-logo.png" style="height: 50px;" alt="...">
+                </a>
+                <a class="navbar-brand fw-bold fs-3 mb-0" href="/index">Cubicol</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index">Cubicol</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Mantenimiento
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/persona">Persona</a></li>
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Usuario</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/productos" >Productos</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/agencia">Agencia</a>
+                    <!--<ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contactanos">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contratosservicios">Contratar Servicio</a>
+                    </li>
+                    <!--persona-->
+                    <!--<li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/persona">Persona</a>
+                    </li>-->
+                </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+      
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="overlay"></div>
+                      <img src="img/imagen1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                  <div class="overlay"></div>
+                    <img src="img/imagen2.jpeg" class="d-block w-100" alt="...">
+              </div>
+          <div class="carousel-item">
+              <div class="overlay"></div>
+                  <img src="img/imagen3.jpg" class="d-block w-100" alt="...">
+              </div>
+          </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="card border-0">
+        <div class="row g-0">
+          <div class="col-md-7">
+              <div class="card-body">
+                  <h2 class="card-title">¿Qué es Cubicol?</h5>
+                      <p class="card-text">Cubicol es la plataforma ideal que
+                        comunica a padres de familia, estudiantes, docentes y
+                        directivos, con la más alta tecnología.
+                
+                        Accede a una nueva experiencia en gestión educativa
+                        con nuestra Aula Virtual, generando Calificaciones,
+                        Tareas, Control de Asistencia, Certificado de estudios,
+                        Admisión, Pensiones y mucho más desde la web o a
+                        través de nuestra app.</p>
+              
+                        <a href="contactanos.html" class="btn text-white fw-bold px-4 py-2" style="background: linear-gradient(135deg, #6f00ff, #b700ff); border-radius: 12px; box-shadow: 0 4px 12px rgba(111, 0, 255, 0.4);">
+                          SOLICITA TU DEMO
+                        </a>
+
+              </div>
+          </div>
+          <div class="col-md-5">
+            <img src="img/bienvenido.png" class="img-fluid rounded-start" alt="...">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <main class="container text-center my-5">
+      <!--<div class="grid text-center">
+          <div class="g-col-12"></div>
+          <img src="img/images.jpeg" class="img-fluid" alt="...">
+        </div>-->
+          <div class="row">
+              <div class="col border rounded sombra-fuerte p-3 bg-white me-3">
+                  <div class="icon mx-auto position-relative" style="width: 150px; height: 170px;">
+                      <div class="seofy_hexagon" style="position: relative; width: 100%; height: 100%;">
+                        <svg class="svg1" style="filter: drop-shadow(4px 5px 4px rgba(234,143,27,0.3)); fill: #ea8f1b; width: 100%; height: 100%;" viewBox="0 0 177.4 197.4" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z"></path>
+                        </svg>
+                        <svg class="svg2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; filter: drop-shadow(4px 5px 4px rgba(255,86,0,0.3)); fill: #ff5600;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z"></path>
+                        </svg>
+
+                    <img src="img/colegio.png" class="img-fluid rounded-circle" alt="Colegio" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; width: 50px; height: 50px;">
+                    <!--<i class="fas fa-school fa-2x color1" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;"></i>-->
+                      </div>
+                        <i style="position: absolute; z-index: 10;" class="fas fa-school fa-3x color1"></i>
+                  </div>
+                  <h3>Cubicol Colegios</h3>
+                        <p>Logra un ecosistema web y móvil ideal para la gestión digital de los colegios, 
+                            intuitivo, práctico y adaptativo. </p>
+                </div>
+            <div class="col rounded sombra-fuerte p-3 bg-white me-3">
+                  <div class="icon mx-auto position-relative" style="width: 150px; height: 170px;">
+                      <div class="seofy_hexagon" style="position: relative; width: 100%; height: 100%;">
+                          <svg class="svg1" style="filter: drop-shadow(4px 5px 4px rgba(82,172,250,0.3)); fill: #52acfa; width: 100%; height: 100%;" viewBox="0 0 177.4 197.4" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z"></path>
+                          </svg>
+                          <svg class="svg2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; filter: drop-shadow(4px 5px 4px rgba(155,15,210,0.3)); fill: #9b0fd2;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                              <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z"></path>
+                          </svg>
+
+                          <img src="img/sombrero-de-graduacion.png" class="img-fluid rounded-circle" alt="Colegio" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; width: 50px; height: 50px;">
+                          <!--<i class="fas fa-school fa-2x color1" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;"></i>-->
+                      </div>
+                          <i style="position: absolute; z-index: 10;" class="fas fa-school fa-3x color1"></i>
+                    </div>
+                          <h3>Cubicol Institutos</h3>
+                              <p>Interfase digital que permite el registro de carreras, itinerarios, docentes y la 
+                                comunicación en vivo con el alumnado.</p>
+            </div>
+            <div class="col rounded sombra-fuerte p-3 bg-white">
+                <div class="icon mx-auto position-relative" style="width: 150px; height: 170px;">
+                      <div class="seofy_hexagon" style="position: relative; width: 100%; height: 100%;">
+                        <svg class="svg1" style="filter: drop-shadow(4px 5px 4px rgba(105,233,242,0.3)); fill: #69e9f2; width: 100%; height: 100%;" viewBox="0 0 177.4 197.4" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z"></path>
+                      </svg>
+                      <svg class="svg2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; filter: drop-shadow(4px 5px 4px rgba(82,172,250,0.3)); fill: #52acfa;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z"></path>
+                      </svg>
+
+                      <img src="img/cohete.png" class="img-fluid rounded-circle" alt="Colegio" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; width: 50px; height: 50px;">
+                      <!--<i class="fas fa-school fa-2x color1" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;"></i>-->
+                      </div>
+                       <i style="position: absolute; z-index: 10;" class="fas fa-school fa-3x color1"></i>
+                </div>
+                  <h3>Cubicol Servicios</h3>
+                  <p>Soluciones integrales en Ecommerce, Elearning, Facturación Electrónica, Páginas Web, 
+                    Social Media y Sistemas Logísticos.</p>
+            </div>
+          </div>
+  </main>
+
+    <main class="container text-center my-5">
+        <div class="grid text-center">
+            <div class="g-col-12"></div>
+            <img src="img/images.jpeg" class="img-fluid" alt="...">
+            <h2 class="fw-bold" style="color: #003366;">¿Por qué elegir nuestros sistemas?</h2>
+            <p>Con Cubicol lograrás administrar de manera más eficiente tu información.</p>
+        </div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-3 rounded sombra-suave p-3 bg-white me-3">
+                    <div>
+                    <img src="img/grupo.png" alt="" style="width: 40px;" class="foto-img2 mb-2">
+                    </div>
+                    <h4>Equipo A1</h4>
+                    <p>Equipo con más de 14 años de experiencia en desarrollo de software para centros 
+                      educativos.</p>
+                </div>
+              <div class="col-md-3 rounded sombra-suave p-3 bg-white me-3">
+                  <div>
+                      <img src="img/sombrero-de-graduacion.png" alt="" style="width: 40px;" class="foto-img2 mb-2">
+                  </div>
+                  <h4>Centro Educativos con Cubicol</h4>
+                  <p>Plataforma Web y Móvil ideal para la gestión de colegios.</p>
+              </div>
+              <div class="col-md-3 rounded sombra-suave p-3 bg-white">
+                  <div>
+                      <img src="img/aplicacion-de-secuencia-de-comandos-de-acceso-directo.png" alt="" style="width: 40px;" class="foto-img2 mb-2">
+                  </div>
+                  <h4>Accesible</h4>
+                  <p>Queremos que más centros educativos sean parte de Cubicol por lo que contamos con 
+                    propuesta económicamente accesibles.</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+                  <div class="col-md-3 rounded sombra-suave p-3 bg-white me-3">
+                      <div>
+                        <img src="img/audifonos-inalambricos.png" alt="" style="width: 40px;" class="foto-img2 mb-2">
+                      </div>
+                          <h4>Atención 24/7</h4>
+                          <p>Brindamos una atención inmediata y un seguimiento personalizado.</p>
+                  </div>
+              <div class="col-md-3 rounded sombra-suave p-3 bg-white me-3">
+                    <div>
+                      <img src="img/ordenador-portatil.png" alt="" style="width: 40px;" class="foto-img2 mb-2">
+                    </div>
+                      <h4>Experiencia Cubicol</h4>
+                      <p>Interfase intuitiva, práctica, adaptativa y de fácil uso.</p>
+              </div>
+              <div class="col-md-3 rounded sombra-suave p-3 bg-white">
+                    <div>
+                      <img src="img/actualizar-base-de-datos.png" alt="" style="width: 40px;" class="foto-img2 mb-2">
+                    </div>
+                      <h4>Actualizaciones</h4>
+                      <p>Capacitación, actualización y mejoras constantes sin costo adicional.</p>
+              </div>
+            </div>
+    </main>
+
+    <div class="modal" id="modal1" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Información</h5>
+            <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-black text-white pt-5 pb-3">
+      <div class="container"> <!-- Usamos 'container' para ajustar mejor el espaciado -->
+        <div class="row justify-content-center"> <!-- Centra las columnas en el footer -->
+    
+          <!-- Logo + descripción -->
+          <div class="col-md-3 mb-4 d-flex flex-column align-items-center"> <!-- Alineación centrada -->
+            <div class="d-flex align-items-center mb-2">
+              <img src="img/Captura de pantalla 2025-04-12 164958.png" alt="Logo Cubicol" style="width: 60px; margin-right: 10px;"> <!-- Aumenté el tamaño del logo -->
+              <h4 class="footer-logo-title" style="font-size: 2rem; font-weight: bold;">Cubicol</h4> <!-- Aumenté el tamaño del texto y le puse negrita -->
+            </div>
+            <div style="text-align: justify; max-width: 250px;">
+              <p class="footer-description mb-3">
+                  La plataforma digital intuitiva, práctica, capaz de adaptarse a todas las necesidades y métodos de trabajo de las instituciones educativas.
+                </p>
+                <div class="footer-link">
+                  <p class="mb-1"><a href="#">Políticas de Privacidad</a></p>
+                  <p><a href="#">Políticas de Cookies</a></p>
+                </div>
+           </div>
+          </div>
+    
+          <!-- Módulos -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Nuestro Módulos</h6>
+            <ul class="list-unstyled small footer-modulos text-justify">
+              <li>Módulo Tesorería</li>
+              <li>Módulo Académico</li>
+              <li>Módulo Intranet</li>
+              <li>Módulo Admisión</li>
+              <li>Módulo Biblioteca</li>
+              <li>Módulo Talleres</li>
+            </ul>
+          </div>
+    
+          <!-- Contacto -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Contáctanos</h6>
+            <p class="small mb-1"><strong>Email:</strong> ventas@sensoft.com.pe</p>
+            <p class="small mb-1"><strong>Celular:</strong> 902 779 069</p>
+            <p class="small text-justify">
+              <strong>Atención:</strong> Lun a Vie: 8 am - 6 pm<br>
+              Sábados: 9 am - 2 pm
+            </p>
+          </div>
+    
+          <!-- Apps -->
+          <div class="col-md-3 mb-4 footer-apps text-center">
+            <h6 class="fw-bold">Nuestras Apps</h6>
+    
+            <!-- Contenedor centrado para las imágenes -->
+            <div class="d-flex flex-column align-items-center">
+              <div style="width: 120px; margin-bottom: 10px;"> <!-- margin-bottom para separación entre imágenes -->
+                <img src="img/appstore.png" alt="App Store" class="img-fluid">
+              </div>
+    
+              <div style="width: 120px;">
+                <img src="img/googleplay.png" alt="Google Play" class="img-fluid">
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+      <!-- Línea morada y créditos -->
+      <hr style="border: none; height: 2px; background: linear-gradient(135deg, #C084FC, #A5B4FC); width: 100%;">
+    
+      <p class="text-center small mb-0">
+        Cubicol 2023 © todos los derechos reservados. Desarrollado por <strong>SENSOFT SOLUTIONS</strong>.
+      </p>
+    </footer>
+
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script type="module" src="js/main.js"></script>-->
+</body>
+</html>
