@@ -44,8 +44,17 @@ public class ContactanosRegistroController {
     }*/
 
     @GetMapping("/eliminar")
-    public String eliminarContacto(@RequestParam Long id){
-        contactanosService.eliminarContacto(id);
-        return "redirect:/contactanos";
+    public String eliminarContacto(@RequestParam Long id, Model model){
+        try {
+            contactanosService.eliminarContacto(id);
+            return "redirect:/contactanos";
+        } catch (RuntimeException e) {
+            model.addAttribute("errorMensaje", e.getMessage());
+            model.addAttribute("registro", new ContactanosRegistro());
+            model.addAttribute("registros", contactanosService.listarContactos());
+            return "contactanos";
+        }
+
+
     }
 }

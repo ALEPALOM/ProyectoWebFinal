@@ -9,7 +9,7 @@ public class ContratoServicio {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "cliente_id", nullable = false)
     private ContactanosRegistro cliente;
 
     @ManyToOne
