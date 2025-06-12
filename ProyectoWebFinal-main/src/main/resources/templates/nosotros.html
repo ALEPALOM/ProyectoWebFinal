@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubicol Nosotros</title>
+    <!--CDN Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CDN Boostrap Sj-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Insertar NAVBAR desde fragments.html -->
+    <div th:replace="~{fragments :: header}"></div>
+
+    <!--Card par ala parte de-->
+    <div class="container my-5"> <!--my5 agrega un margen arriba y abajo del contenedor-->
+      <div class="card border-0" >
+        <div class="row g-5">
+            <div class="col-md-6 text-start">  
+                <div class="card-body">
+                    <h1 class="fw-bold text-primary-emphasis mb-2 " style="font-size: 2rem;">
+                        Cubicol es la mejor solución<br>las instituciones educativas</h1>
+                  <p class="card-text my-3">
+                    Nuestro equipo cuenta con más de 14 años de experiencia en software para colegios, 
+                    facilitando el trabajo de más de 800 clientes que reciben atención inmediata y seguimiento 
+                    constante de forma personalizada 24/7.
+                  </p>
+                  <a href="contactanos.html" class="btn text-white fw-bold px-4 py-2" style="background: linear-gradient(135deg, #6f00ff, #b700ff); border-radius: 12px; box-shadow: 0 4px 12px rgba(111, 0, 255, 0.4);">
+                    SOLICITA TU DEMO
+                  </a>
+             </div>
+              </div>    
+
+            <div class="col-md-6">
+                <img src="img/nosotros-equipo.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+        </div>
+       </div>
+      </div>
+
+
+      <!--MMIsion vision -->
+<div class="py-5" style="background-color: #f4f6fd;"> <!-- Fondo morado personalizado -->
+    <div class="container">
+      <div class="row g-4">
+
+        <h1 class="fw-bold text-primary-emphasis text-center " style="font-size: 2rem;">
+            Cubicol contribuyendo a la educación con tecnología</h1>
+        
+            <p class="text-center">Nosotros estamos 100% comprometidos con el avance de la educación con tecnología a beneficio de miles de
+            estudiantes e instituciones educativas que lo necesitan.</p>
+        
+            <!-- CARD 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body my-5">
+                <img src="img/Escudo.png" class="img-fluid rounded-circle mb-10" alt="..." style="width: 120px; height: 120px; object-fit: cover; background-color: rgb(234, 238, 238);" >
+              <h5 class="card-title my-3">Misión</h5>
+              <p class="card-text mx-5">
+                Brindar la mejor plataforma digital para la gestión educativa que optimice el trabajo, la experiencia de usuario y las comunicaciones 
+                de su institución, con los mejores estándares educativos.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+  
+        <!-- CARD 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body my-5">
+                <img src="img/Vision.png" class="img-fluid rounded-circle mb-10" alt="..." style="width: 120px; height: 120px; object-fit: cover; background-color: rgb(234, 238, 238);">
+              <h5 class="card-title">Visión</h5>
+              <p class="card-text">
+                Ser reconocida como la plataforma de gestión educativa de mayor uso, siendo la primera a nivel nacional
+                 e internacional por el sector educativo.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+  
+        <!-- CARD 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center">
+            <div class="card-body my-5">
+            <img src="img/valor.png" class="img-fluid rounded-circle mb-10" alt="..." style="width: 120px; height: 120px; object-fit: cover; background-color: rgb(234, 238, 238);">
+              <h5 class="card-title">Valores corporativos</h5>
+              <p class="card-text">
+                Experiencia, seguridad y confiabilidad, calidad, compromiso, innovación, adaptabilidad e impacto educativo.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <!--Parte de los números-->
+  <section class="my-5">
+  <div class="container">
+  <div class="row text-center">
+    <div class="col-6 col-md-3 mb-4">
+      <div class="card border-0">
+        <div class="card-body">
+          <h2 class="card-title" style="color: #4822ef">+800</h2>
+          <p class="fw-semibold text-secondary m-0">CENTROS<br> EDUCATIVOS</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <div class="card border-0">
+        <div class="card-body">
+          <h2 class="card-title" style="color: #4822ef;">+14</h2>
+          <p class="fw-semibold text-secondary m-0">AÑOS DE<br> EXPERIENCIA</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+        <div class="card border-0">
+          <div class="card-body">
+            <h2 class="card-title " style="color: #4822ef;">+15</h2>
+            <p class="fw-semibold text-secondary m-0">MÓDULOS<br> INTERACTIVOS</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <div class="card border-0">
+          <div class="card-body">
+            <h2 class="card-title" style="color: #4822ef">+365</h2>
+            <p class="fw-semibold text-secondary m-0">ATENCIÓN LAS 24/7</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+</section>
+
+
+<!--Conoce nustros ervicios -->
+
+   <div class="container">
+      <img src="" class="" alt="">
+   </div>
+
+    <!-- Insertar FOOTER desde fragments.html -->
+    <div th:replace="~{fragments :: footer}"></div>
+  
+</body>
+</html>
